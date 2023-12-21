@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list app</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <div class="container">
+      <header>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h1 class="primary-heading">Shopping list</h1>
+      </header>
+      
+      <main>
+
+        <section class="inputWindow">
+          <input type="text" class="input inputBar" placeholder="Enter items">
+          <button type="submit" class="submit btn"><i class="fa-solid fa-plus"></i> Add item</button>
+        </section>
+
+        <section class="filterWindow">
+          <input type="text" name="filter" class="filter inputBar" placeholder="Filter items">
+        </section>
+
+        <section class="itemsWindow">
+          <ul class="list">
+            <li class="list__item">Juice<i class="fa-solid fa-xmark"></i></li>
+          </ul>
+        </section>
+
+      </main>
+
+      <footer>
+        <button class="clearBtn btn" type="reset">Clear All</button>
+      </footer>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
