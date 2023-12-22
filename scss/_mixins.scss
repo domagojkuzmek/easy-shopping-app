@@ -3,11 +3,17 @@
 // Media queries mixin
 @mixin layout($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint){
-        @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
             @content;
         }
     }
     @else {
         @warn "Unfortunately, there was an error with retrieving breakpoint values!"
     }
+};
+
+// Flexbox mixin
+@mixin flex() {
+    display: flex;
+    align-items: center;
 }

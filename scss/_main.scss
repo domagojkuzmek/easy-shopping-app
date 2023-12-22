@@ -1,0 +1,44 @@
+@use "util";
+@import "mixins";
+
+main {
+    @include flex;
+    flex-direction: column;
+    gap: 2rem;
+
+   .filterWindow {
+    width: 60%;
+
+    & .filter {
+        font-size: 0.8rem;
+    }
+   }
+
+   & .itemsWindow {
+    width: 100%;
+
+    & .list {
+        background-color: var(--white);
+        width: 100%;
+        padding: 1rem;
+        display: inline-flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        &__item {
+            width: 45%;
+            @include flex;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            background-color: var(--sky-blue);
+            border-radius: 15px;
+
+            & i {
+                color: var(--red);
+                cursor: pointer;
+            }
+        }
+    }
+   }
+}

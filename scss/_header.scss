@@ -1,0 +1,21 @@
+@import "mixins";
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    @include flex;
+    justify-content: center;
+    position: relative;
+    
+    & i {
+        position: absolute;
+        left: 10px;
+    }
+}

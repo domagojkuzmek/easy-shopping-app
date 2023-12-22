@@ -1,0 +1,28 @@
+.inputBar {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+.btn {
+    background-color: var(--orange);
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 15px;
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-block-start: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &:active {
+        background-color: var(--light-orange);
+        transform: scale(1.1);
+    }
+}

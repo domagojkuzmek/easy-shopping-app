@@ -1,4 +1,22 @@
 @use "reset";
 @use "variables";
+@use "header";
+@use "main";
+@use "footer";
+@use "util";
 @import "mixins";
 
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--sky-blue);
+}
+
+.container {
+    width: 100%;
+    margin-inline: inline;
+    padding: 1rem 0.5rem;
+    @include flex;
+    flex-direction: column;
+    gap: 4rem;
+}
