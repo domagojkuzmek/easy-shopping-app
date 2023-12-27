@@ -40,5 +40,9 @@ main {
             }
         }
     }
+
+    @include layout(tablet) {
+        width: 700px;
+    }
    }
 }
